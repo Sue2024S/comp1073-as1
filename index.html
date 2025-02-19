@@ -8,23 +8,80 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <div><h1>Let's make a story!</h1>
+    <div>
+        <h1>Let's make a story!</h1>
         <div class="book">
             <div class="left-page">
-                <p>Click on the buttons and create fun stories!</p>
-                
+                <!-- elements of the story -->
+                <div class="elements">
+                    <!-- 1 -->
+                    <div class="column col1">
+                        <h2>1</h2>
+                        <img src="images/turkey.png" alt="turkey">
+                        <p>The turkey</p>
+                        <p>Mom</p>
+                        <p>Dad</p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="column col2">
+                        <h2>2</h2>
+                        <!-- <img src="images/ate" alt="ate"> -->
+                        <p>sat on</p>
+                        <p>ate</p>
+                        <p>danced with</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="column col3">
+                        <h2>3</h2>
+                        <!-- <img src="images/funny" alt="funny"> -->
+                        <p>a funny</p>
+                        <p>a scary</p>
+                        <p>a goofy</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="column col4">
+                        <h2>4</h2>
+                        <!-- <img src="images/goat" alt="goat"> -->
+                        <p>goat</p>
+                        <p>monkey</p>
+                        <p>fish</p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="column col5">
+                        <h2>5</h2>
+                        <!-- <img src="images/chair" alt="chair"> -->
+                        <p>on the moon</p>
+                        <p>on the chair</p>
+                        <p>in my spaghetti</p>
+                        
+                    </div>
+                </div>
             </div>
+
             <div class="right-page">
                 <p>Click on the buttons and create fun stories!</p>
                 <div class="buttons">
-                    <button class="button purple"></button>
-                    <button class="button blue"></button>
-                    <button class="button green"></button>
-                    <button class="button orange"></button>
-                    <button class="button pink"></button>
+                    <!-- 1-noun -->
+                    <button id= "1-noun" class="button purple"></button>
+                    <!-- 2-verb -->
+                    <button id="2-verb" class="button blue"></button>
+                    <!-- 3-adjective -->
+                    <button id="3-adj" class="button green"></button>
+                    <!-- 4-noun -->
+                    <button id="4-noun" class="button orange"></button>
+                    <!-- 5-complement -->
+                    <button id="5-comp" class="button pink"></button>
+                </div>
+                <!-- other buttons -->
+                <div class="otherbuttons">
+                    <!-- show story -->
+                     <button id="show" class="button red">Show Story</button>
+                     <button id="random" class="button white">Random Story</button>
+                     <button id="reset" class="button grey">Reset</button>
+                     <p id="story" class="lightblue"></p>
                 </div>
                 <!--worm image
-                <img src="worm.png" alt="Cartoon Worm" class="worm"> -->
+                <img src="worm.png" alt="worm" class="worm"> -->
             </div>
         </div>
     </div>
