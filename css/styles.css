@@ -33,7 +33,7 @@ body {
 .book {
   display: flex;
   width: 700px;
-  height: 400px;
+  height: 500px;
   background-color: rgb(237, 219, 19);
   border-radius: 15px;
   position: relative;
@@ -132,10 +132,16 @@ body {
 }
 
 /* text of the story */
-#chooseNoun1 {
+#chooseNoun1, #chooseVerb2, #chooseAdj3, #chooseNoun4, #chooseComp5, #story {
   color: white;
   font-weight: bolder;
 }
+
+#story {
+  background-color: blue;
+  text-align: center;
+}
+
 
 /* .speaker {
   width: 80px;
