@@ -81,6 +81,7 @@ var shoesImg = document.querySelector("#shoes");
 
 // Functions
 
+//col 1
 function noun1_onclick() {
     // variable to get array element and displaying it 
     var displayNoun1ArrayElement = nounsArray[(Math.floor(Math.random() * countNounsArray))];
@@ -126,8 +127,43 @@ function noun1_onclick() {
     getNoun1.textContent = displayNoun1ArrayElement;
 }
 
+//col 2
 function verb2_onclick() {
     var displayVerbArrayElement = verbsArray[(Math.floor(Math.random() * countVerbsArray))];
+    satImg.style.backgroundColor = 'transparent';
+    eatImg.style.backgroundColor = 'transparent';
+    danceImg.style.backgroundColor = 'transparent';
+    sawImg.style.backgroundColor = 'transparent';
+    dislikeImg.style.backgroundColor = 'transparent';
+    kissImg.style.backgroundColor = 'transparent';
+    
+    console.log(displayVerbArrayElement)
+    if (displayVerbArrayElement == "sat on")
+        {
+            satImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+        }
+    
+    else if (displayVerbArrayElement == "ate")
+        {
+            eatImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+        }
+    else if (displayVerbArrayElement == "danced with")
+        {
+            danceImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+        }
+    else if (displayVerbArrayElement == "saw")
+        {
+            sawImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+        }
+    else if (displayVerbArrayElement == "doesn't like")
+        {
+            dislikeImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+        }
+    else if (displayVerbArrayElement == "kissed")
+        {
+            kissImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+        }
+
     getVerb2.textContent = displayVerbArrayElement;
 }
 
