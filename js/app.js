@@ -1,19 +1,19 @@
 
 // Declaring Variables
 
-// const for main button query selectors
+// query selectors for main buttons 
 const noun1 = document.querySelector("#noun1");
 const verb2 = document.querySelector("#verb2");
 const adj3 = document.querySelector("#adj3");
 const noun4 = document.querySelector("#noun4");
 const comp5 = document.querySelector("#comp5");
 
-//const for other buttons query selectors
+//query selectors for other buttons 
 const show = document.querySelector("#show");
 const random = document.querySelector("#random");
 const reset = document.querySelector("#reset");
 
-//const for p tag to display query selectors
+//query selectors for p tag to display choosen words
 const getNoun1 = document.querySelector("#chooseNoun1");
 const getVerb2 = document.querySelector("#chooseVerb2");
 const getAdj3 = document.querySelector("#chooseAdj3");
@@ -35,7 +35,7 @@ var countAdjsArray = adjsArray.length;
 var countNouns4Array = nouns4Array.length;
 var countCompsArray = compsArray.length;
 
-//img selectors
+//Image selectors
 
 // col 1 - Nouns
 var womanImg = document.querySelector("#woman");
@@ -81,10 +81,12 @@ var shoesImg = document.querySelector("#shoes");
 
 // Functions
 
-//col 1
+//to handle col 1 - noun selection
 function noun1_onclick() {
     // variable to get array element and displaying it 
     var displayNoun1ArrayElement = nounsArray[(Math.floor(Math.random() * countNounsArray))];
+    
+    //reset background color of images
     turkeyImg.style.backgroundColor = 'transparent';
     womanImg.style.backgroundColor = 'transparent';
     dadImg.style.backgroundColor = 'transparent';
@@ -93,6 +95,7 @@ function noun1_onclick() {
     elephantImg.style.backgroundColor = 'transparent';
     catImg.style.backgroundColor = 'transparent';
 
+    //conditional to highlight the image according to the choosen noum
     console.log(displayNoun1ArrayElement)
     if (displayNoun1ArrayElement == "The turkey")
         {

@@ -4,6 +4,10 @@
 
 /* || GENERAL STYLES */
 
+html {
+  margin: auto;
+}
+
 h1 {
     font-size: 3rem;
     font-family: 'Henny Penny', cursive;
@@ -11,7 +15,7 @@ h1 {
     color:rgb(179, 150, 3)
 }
 
-h2 {
+h2, .steps {
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
 }
@@ -20,6 +24,7 @@ p, button {
     font-family: 'Poppins', sans-serif;
     font-size: 0.5rem;
 }
+
 
 body {
   display: flex;
@@ -30,6 +35,7 @@ body {
 }
 
 /* || UTILITIES */
+
 .book {
   display: flex;
   width: 700px;
@@ -39,6 +45,7 @@ body {
   position: relative;
   padding: 20px;
 }
+
 .left-page {
   width: 50%;
   padding: 15px;
@@ -49,6 +56,12 @@ body {
   position: relative;
   padding: 20px;
 }
+
+.steps {
+  padding-top: 20%;
+}
+
+/* main buttons */
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -78,8 +91,9 @@ body {
   background-color: rgba(245, 81, 220, 0.881); 
 }
 
+/* other buttons */
 .otherbuttons {
-  padding-top: 100px;
+  padding-top: 20px;
   padding-right: 20px;
   width: 40px;
   height: 40px;
@@ -101,6 +115,7 @@ body {
   background-color: grey;
 }
 
+/* elements of the story */
 .elements {
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -142,46 +157,5 @@ body {
   text-align: center;
 }
 
-
-/* .speaker {
-  width: 80px;
-  height: 50px;
-  background-color: black;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-} */
-/* .worm {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-} */
-/* body {
-   
-  } */
-  
-/* h1, h2, h3, h4 {
-  
-  } */
-  
-/* ul {
- 
-  } */
-  
-  /* blockquote {
-  }  */
-
-
-
-/* .no-bullets {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  } */
-  
 
 
