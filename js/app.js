@@ -140,40 +140,115 @@ function verb2_onclick() {
     console.log(displayVerbArrayElement)
     if (displayVerbArrayElement == "sat on")
         {
-            satImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            satImg.style.backgroundColor = 'red';
         }
     
     else if (displayVerbArrayElement == "ate")
         {
-            eatImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            eatImg.style.backgroundColor = 'red';
         }
     else if (displayVerbArrayElement == "danced with")
         {
-            danceImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            danceImg.style.backgroundColor = 'red';
         }
     else if (displayVerbArrayElement == "saw")
         {
-            sawImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            sawImg.style.backgroundColor = 'red';
         }
     else if (displayVerbArrayElement == "doesn't like")
         {
-            dislikeImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            dislikeImg.style.backgroundColor = 'red';
         }
     else if (displayVerbArrayElement == "kissed")
         {
-            kissImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            kissImg.style.backgroundColor = 'red';
         }
 
     getVerb2.textContent = displayVerbArrayElement;
 }
 
+//col 3
 function adj3_onclick() {
     var displayAdjArrayElement = adjsArray[(Math.floor(Math.random() * countAdjsArray))];
+    funnyImg.style.backgroundColor = 'transparent';
+    scaryImg.style.backgroundColor = 'transparent';
+    goofyImg.style.backgroundColor = 'transparent';
+    slimyImg.style.backgroundColor = 'transparent';
+    barkImg.style.backgroundColor = 'transparent';
+    sadImg.style.backgroundColor = 'transparent';
+
+    console.log(displayAdjArrayElement)
+    if (displayAdjArrayElement == "a funny")
+        {
+            funnyImg.style.backgroundColor = 'red';
+        }
+    
+    else if (displayAdjArrayElement == "a scary")
+        {
+            scaryImg.style.backgroundColor = 'red';
+        }
+    else if (displayAdjArrayElement == "a goofy")
+        {
+            goofyImg.style.backgroundColor = 'red';
+        }
+    else if (displayAdjArrayElement == "a slimy")
+        {
+            slimyImg.style.backgroundColor = 'red';
+        }
+    else if (displayAdjArrayElement == "a barking")
+        {
+            barkImg.style.backgroundColor = 'red';
+        }
+    else if (displayAdjArrayElement == "a sad")
+        {
+            sadImg.style.backgroundColor = 'red';
+        }
+
     getAdj3.textContent = displayAdjArrayElement;
 }
 
+//col4
 function noun4_onclick() {
     var displayNoun4ArrayElement = nouns4Array[(Math.floor(Math.random() * countNouns4Array))];
+    goatImg.style.backgroundColor = 'transparent';
+    monkeyImg.style.backgroundColor = 'transparent';
+    fishImg.style.backgroundColor = 'transparent';
+    cowImg.style.backgroundColor = 'transparent';
+    frogImg.style.backgroundColor = 'transparent';
+    bugImg.style.backgroundColor = 'transparent';
+    wormImg.style.backgroundColor = 'transparent';
+
+    console.log(displayNoun4ArrayElement)
+    if (displayNoun4ArrayElement == "goat")
+        {
+            satImg.style.backgroundColor = 'red';
+        }
+    
+    else if (displayNoun4ArrayElement == "monkey")
+        {
+            eatImg.style.backgroundColor = 'red';
+        }
+    else if (displayNoun4ArrayElement == "fish")
+        {
+            danceImg.style.backgroundColor = 'red';
+        }
+    else if (displayNoun4ArrayElement == "cow")
+        {
+            sawImg.style.backgroundColor = 'red';
+        }
+    else if (displayNoun4ArrayElement == "frog")
+        {
+            dislikeImg.style.backgroundColor = 'red';
+        }
+    else if (displayNoun4ArrayElement == "bug")
+        {
+            kissImg.style.backgroundColor = 'red';
+        }
+    else if (displayNoun4ArrayElement == "worm")
+            {
+                kissImg.style.backgroundColor = 'red';
+            }  
+
     getNoun4.textContent = displayNoun4ArrayElement;
 }
 
