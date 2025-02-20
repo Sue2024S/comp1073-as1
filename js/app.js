@@ -74,7 +74,7 @@ var wormImg = document.querySelector("#worm");
 //col 5 - Complements
 var moonImg = document.querySelector("#moon");
 var chairImg = document.querySelector("#chair");
-var spaghettiImg = document.querySelector("#spaguetti");
+var spaghettiImg = document.querySelector("#spaghetti");
 var soupImg = document.querySelector("#soup");
 var grassImg = document.querySelector("#grass");
 var shoesImg = document.querySelector("#shoes");
@@ -221,39 +221,78 @@ function noun4_onclick() {
     console.log(displayNoun4ArrayElement)
     if (displayNoun4ArrayElement == "goat")
         {
-            satImg.style.backgroundColor = 'red';
+            goatImg.style.backgroundColor = 'red';
         }
     
     else if (displayNoun4ArrayElement == "monkey")
         {
-            eatImg.style.backgroundColor = 'red';
+            monkeyImg.style.backgroundColor = 'red';
         }
     else if (displayNoun4ArrayElement == "fish")
         {
-            danceImg.style.backgroundColor = 'red';
+            fishImg.style.backgroundColor = 'red';
         }
     else if (displayNoun4ArrayElement == "cow")
         {
-            sawImg.style.backgroundColor = 'red';
+            cowImg.style.backgroundColor = 'red';
         }
     else if (displayNoun4ArrayElement == "frog")
         {
-            dislikeImg.style.backgroundColor = 'red';
+            frogImg.style.backgroundColor = 'red';
         }
     else if (displayNoun4ArrayElement == "bug")
         {
-            kissImg.style.backgroundColor = 'red';
+            bugImg.style.backgroundColor = 'red';
         }
     else if (displayNoun4ArrayElement == "worm")
-            {
-                kissImg.style.backgroundColor = 'red';
-            }  
+        {
+            wormImg.style.backgroundColor = 'red';
+        }  
 
     getNoun4.textContent = displayNoun4ArrayElement;
 }
 
+//col5
 function comp5_onclick() {
     var displayCompArrayElement = compsArray[(Math.floor(Math.random() * countCompsArray))];
+    moonImg.style.backgroundColor = 'transparent';
+    chairImg.style.backgroundColor = 'transparent';
+    spaghettiImg.style.backgroundColor = 'transparent';
+    soupImg.style.backgroundColor = 'transparent';
+    grassImg.style.backgroundColor = 'transparent';
+    shoesImg.style.backgroundColor = 'transparent';
+
+    console.log(displayCompArrayElement)
+    if (displayCompArrayElement == "on the moon")
+        {
+            moonImg.style.backgroundColor = 'red';
+        }
+    
+    else if (displayCompArrayElement == "on the chair")
+        {
+            chairImg.style.backgroundColor = 'red';
+        }
+    
+    else if (displayCompArrayElement == "in my spaguetti")
+        {
+            spaghettiImg.style.backgroundColor = 'red';
+        }
+    
+    else if (displayCompArrayElement == "in my soup")
+        {
+            soupImg.style.backgroundColor = 'red';
+        }
+        
+    else if (displayCompArrayElement == "on the grass")
+        {
+            grassImg.style.backgroundColor = 'red';
+        }
+    
+    else if (displayCompArrayElement == "in my shoes")
+        {
+            shoesImg.style.backgroundColor = 'red';
+        }
+
     getComp5.textContent = displayCompArrayElement;
 }
 
@@ -269,8 +308,9 @@ function random_onclick() {
     var displayAdjArrayElement = adjsArray[(Math.floor(Math.random() * countAdjsArray))];
     var displayNoun4ArrayElement = nouns4Array[(Math.floor(Math.random() * countNouns4Array))];
     var displayCompArrayElement = compsArray[(Math.floor(Math.random() * countCompsArray))];
-    var stringConcatenation = displayNoun1ArrayElement + " " + displayVerbArrayElement + " " + displayAdjArrayElement; + " " + displayNoun4ArrayElement + " " + displayCompArrayElement;
-    story.textContent = stringConcatenation;    
+    var stringConcatenation = displayNoun1ArrayElement + " " + displayVerbArrayElement + " " + displayAdjArrayElement + " " + displayNoun4ArrayElement + " " + displayCompArrayElement;
+    story.textContent = stringConcatenation; 
+    console.log(stringConcatenation);   
 }
 
 //reset button
@@ -293,7 +333,37 @@ function reset_onclick() {
     catImg.style.backgroundColor = 'transparent';
 
     //reset images col-2
+    satImg.style.backgroundColor = 'transparent';
+    eatImg.style.backgroundColor = 'transparent';
+    danceImg.style.backgroundColor = 'transparent';
+    sawImg.style.backgroundColor = 'transparent';
+    dislikeImg.style.backgroundColor = 'transparent';
+    kissImg.style.backgroundColor = 'transparent';
 
+    //reset images col-3
+    funnyImg.style.backgroundColor = 'transparent';
+    scaryImg.style.backgroundColor = 'transparent';
+    goofyImg.style.backgroundColor = 'transparent';
+    slimyImg.style.backgroundColor = 'transparent';
+    barkImg.style.backgroundColor = 'transparent';
+    sadImg.style.backgroundColor = 'transparent';
+
+    //reset images col-4
+    goatImg.style.backgroundColor = 'transparent';
+    monkeyImg.style.backgroundColor = 'transparent';
+    fishImg.style.backgroundColor = 'transparent';
+    cowImg.style.backgroundColor = 'transparent';
+    frogImg.style.backgroundColor = 'transparent';
+    bugImg.style.backgroundColor = 'transparent';
+    wormImg.style.backgroundColor = 'transparent';
+
+    //reset images col-5
+    moonImg.style.backgroundColor = 'transparent';
+    chairImg.style.backgroundColor = 'transparent';
+    spaghettiImg.style.backgroundColor = 'transparent';
+    soupImg.style.backgroundColor = 'transparent';
+    grassImg.style.backgroundColor = 'transparent';
+    shoesImg.style.backgroundColor = 'transparent';
 }
 
 // Event Listeners
