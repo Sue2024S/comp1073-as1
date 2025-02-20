@@ -46,6 +46,38 @@ var teacherImg = document.querySelector("#teacher");
 var elephantImg = document.querySelector("#elephant");
 var catImg = document.querySelector("#cat");
 
+//col 2 - Verbs
+var satImg = document.querySelector("#sat");
+var eatImg = document.querySelector("#eat");
+var danceImg = document.querySelector("#dance");
+var sawImg = document.querySelector("#saw");
+var dislikeImg = document.querySelector("#dislike");
+var kissImg = document.querySelector("#kiss");
+
+//col 3 - Adjectives
+var funnyImg = document.querySelector("#funny");
+var scaryImg = document.querySelector("#scary");
+var goofyImg = document.querySelector("#goofy");
+var slimyImg = document.querySelector("#slimy");
+var barkImg = document.querySelector("#bark");
+var sadImg = document.querySelector("#sad");
+
+//col 4 - Nouns
+var goatImg = document.querySelector("#goat");
+var monkeyImg = document.querySelector("#monkey");
+var fishImg = document.querySelector("#fish");
+var cowImg = document.querySelector("#cow");
+var frogImg = document.querySelector("#frog");
+var bugImg = document.querySelector("#bug");
+var wormImg = document.querySelector("#worm");
+
+//col 5 - Complements
+var moonImg = document.querySelector("#moon");
+var chairImg = document.querySelector("#chair");
+var spaghettiImg = document.querySelector("#spaguetti");
+var soupImg = document.querySelector("#soup");
+var grassImg = document.querySelector("#grass");
+var shoesImg = document.querySelector("#shoes");
 
 // Functions
 
