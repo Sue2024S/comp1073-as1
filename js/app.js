@@ -22,7 +22,7 @@ const getComp5 = document.querySelector("#chooseComp5");
 const getStory = document.querySelector("#story");
 
 //var for pre-defined arrays
-var nounsArray = ["The turkey", "Woman", "Dad", "The dog", "My teacher", "The elephant", "The cat"];
+var nounsArray = ["The turkey", "Mom", "Dad", "The dog", "My teacher", "The elephant", "The cat"];
 var verbsArray = ["sat on", "ate", "danced with", "saw", "doesn't like", "kissed"];
 var adjsArray = ["a funny", "a scary", "a goofy", "a slimy", "a barking", "a sad"];
 var nouns4Array = ["goat", "monkey", "fish", "cow", "frog", "bug", "worm"];
@@ -96,32 +96,32 @@ function noun1_onclick() {
     console.log(displayNoun1ArrayElement)
     if (displayNoun1ArrayElement == "The turkey")
         {
-            turkeyImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            turkeyImg.style.backgroundColor = 'red';
         }
     
-    else if (displayNoun1ArrayElement == "Woman")
+    else if (displayNoun1ArrayElement == "Mom")
         {
-            womanImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            womanImg.style.backgroundColor = 'red';
         }
     else if (displayNoun1ArrayElement == "Dad")
         {
-            dadImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            dadImg.style.backgroundColor = 'red';
         }
     else if (displayNoun1ArrayElement == "The dog")
         {
-            dogImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            dogImg.style.backgroundColor = 'red';
         }
     else if (displayNoun1ArrayElement == "My teacher")
         {
-            teacherImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            teacherImg.style.backgroundColor = 'red';
         }
     else if (displayNoun1ArrayElement == "The elephant")
         {
-            elephantImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            elephantImg.style.backgroundColor = 'red';
         }
     else if (displayNoun1ArrayElement == "The cat")
         {
-            catImg.style.backgroundColor = 'rgba(27, 97, 202, 0.88)';
+            catImg.style.backgroundColor = 'red';
         }
 
     getNoun1.textContent = displayNoun1ArrayElement;
